@@ -3,6 +3,23 @@
  */
 
 /* Styling for HTML elements */
+/*
+.box {
+  height: 20px;
+  padding: 20px;
+  color: #fff;
+  background: deepskyblue;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+div {
+  border: .5px lightslategray dotted;
+  padding: 1px;
+}
+*/
 body {
   padding: 6;
   margin: 3;
@@ -30,9 +47,12 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
+/*
 .fit-picture {
-  width: 300px;
+  width: 100px;
 }
+*/
 a {
   color: #d21034;
 }
