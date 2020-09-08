@@ -63,33 +63,31 @@
 
   <!-- Row 2 -->
   <div class="row">
-    <div class="col-md-9 box">
-      <h2> <strong> Team Wins Comparison </strong></h2> 
-        <p> <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-50 p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
-          The purpose of this project was to analyze the performance of all of the teams in the NBA and understanding more about how each of the 30 teams 
-          compare to each each other in terms of total wins, consistency of wins, and gain a better understanding of overall team performance.
-          <br>
-          <br>
-          The data for this analysis was based on the last 5 years (2015 - 2019) of data from Basketball-reference.com (https://www.basketball-reference.com/leagues/NBA_wins.html).  The data was
-          imported into pandas and plotted using the matplotlib module.  This site provides the source data and visualizations created as part of the analysis
-          as well as explanations and descriptions of the results of the analysis. 
+    <div class="col-md-8 box">
+      <h2> <strong> Comparison Box Plot </strong></h2> 
+        <p> <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
+          Digging a bit deeper, to understand which teams performed the most consistently, a box-plot of the top 5 teams and the median and worst teams was created.  
+          For the top 5 teams - few outliers were observed, indicating mostly consistent success, the team 
+          representing the median of all teams has the largest interquartile range indicating a boad variance in 
+          wins across the 5 seasons.  The worst performing team shows a single outlier and as a result, 
+          a mean value that is greater than the median.
         </p>
     </div>
 
-    <div class="col-md-2 box">
+    <div class="col-md-3 box">
       <h2> <strong> Visualizations </strong></h2>
-      <a href="/Web-Design-Challenge/winscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/meanscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/comparisonboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/overallboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
+    <a href="/Web-Design-Challenge/winscompare.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png"  class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/meanscompare.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png"  class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/comparisonboxplot.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" id="solidborder" class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/overallboxplot.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p> -->
     </div>
   </div>
