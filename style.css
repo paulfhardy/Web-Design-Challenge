@@ -3,97 +3,54 @@
  */
 
 /* Styling for HTML elements */
-/*
-.box {
-  height: 20px;
-  padding: 20px;
-  color: #fff;
-  background: deepskyblue;
-}
 
+
+/*
 .margin-top-80 {
   margin-top: 80px;
 }
-
-div {
-  border: .5px lightslategray dotted;
-  padding: 1px;
-}
 */
+
+
 body {
-  padding: 6;
-  margin: 3;
+  padding: 6px;
+  margin: 3px;
   font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 150%;
   color: #333;
   background: #efeee7;
-  border: cadetblue;
+  /* border: cadetblue; */
+  background-image: url("/Web-Design-Challenge/WebVisualizations/Resources/slamdunk3.jpg");
 }
+
 
 header {
   background: #333;
+  background-color: grey;
+  border-radius: 5px;
 }
 
 h1 {
-  padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 38px;
-  color: black;
+  padding: 5px;
+  margin: 20px;
+  font-size: 36px;
+  color: orangered;
+  background-color:lightgray;
   text-align: center;
+  border-radius: 5px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
-/*
-.fit-picture {
-  width: 100px;
+.box {
+  /* height: 20px; */
+  padding: 25px; 
+     /* color: #fff; */
+  border-color: black ;
+  background: lightgray;
+  margin-right: 3px;
+  border-radius: 5px;
 }
-*/
-a {
-  color: #d21034;
-}
-
-/* Selecting elements by class */
-/*
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-*/
-/* Selecting elements by ID */
-/*
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
-}
-*/
-/*
-#figure {
-  position: relative;
-}
-
-#bio-name {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-}
-
-#main-bio {
-  width: 70%;
-}
-
-#contact-info {
-  width: 30%;
-}
-
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-}
-*/

@@ -9,28 +9,69 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
+    <!--  <a class="navbar-brand" href="#"> Some text </a> -->
+    <a class="navbar-brand" href="#">
+      <img src="/Web-Design-Challenge/WebVisualizations/Resources/icon.png" width="50" height="40" alt="" loading="lazy">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All Team Wins Comparison - Bar Chart</a>
+            <a class="dropdown-item" href="#">Top 5 Mean Wins vs Worst - Line Chart</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="#">Performance Consistency Comparison - Box Plot </a>
+            <a class="dropdown-item" href="#">All teams Mean Performance Consistency - Box Plot </a>
+          </div>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 <!-- Creates the Overall Grid -->
 <div class="container">
 
   <!-- Row 1 -->
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-10">
       <h1>NBA Team Wins Analysis</h1>
     </div>
   </div>
 
   <!-- Row 2 -->
   <div class="row">
-    <div class="col-md-8">
-      <div class="box">
-        <h2> <strong> Team Wins Comparison </strong></h2>
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-50 p-3 img-fluid fit-picture float-right" alt="Responsive image" alt="Team Performance comparison - wins over last 5 years.">
+    <div class="col-md-7 box">
+        <h2> <strong> Team Wins Comparison </strong></h2> 
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-50 p-3  img-fluid fit-picture float-left" alt="Responsive image" alt="Team Performance comparison - wins over last 5 years.">
         <p> A barchart of the total wins for each team in the NBA was plotted to establisg a clear comparison of the level of success for each team over the past 5 years, in terms of the total number of wins.  The chart revealed
           a wide range of wins across all 300 teams, with the top performing team a full 196 wins ahead of the worst performing team. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto sed mollitia possimus facilis, architecto cumque eveniet ipsum reiciendis molestias eius, harum at repellendus nobis quod esse ratione consectetur. Fugiat.
         </p>
-      </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 box">
       <h2> <strong> Visualizations </strong></h2>
       <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-50 p-3 img-fluid fit-picture float-left" alt="...">
       <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="w-50 p-3 img-fluid fit-picture float-right" alt="...">
@@ -42,7 +83,7 @@
 
   <!--Row 2 -->
   <!-- <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3" >
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
     </div>
     <div class="col-md-3">
