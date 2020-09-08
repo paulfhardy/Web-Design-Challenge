@@ -13,8 +13,8 @@
 
 
 body {
-  padding: 5px;
-  margin: 15px;
+  /*padding: 5px;*/
+  /*margin: 15px;*/
   font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 150%;
@@ -31,30 +31,43 @@ header {
 }
 
 h1 {
-  padding: 5px;
-  margin: 15px;
+  padding: 10px;
+  margin: 20px;
   font-size: 36px;
   color: orangered;
   background-color:lightgray;
   text-align: center;
   border-radius: 5px;
-  box-shadow: 5px 10px grey ;
+  box-shadow: 5px 5px grey ;
 }
 
 h2 {
   font-size: 20px;
+  padding-top: 0px 
 }
 
+
+h3 {
+  font-size: 14px;
+}
+
+
 .box {
-  /* height: 20px; */
-  padding: 10px; 
-     /* color: #fff; */
+  padding: 30px; 
   border-color: black ;
   background: lightgray;
   margin-inline-start: 10px;
   border-radius: 10px;
+  box-shadow: 5px 5px grey ;
 }
-
+.comparisonsbox {
+  padding: 10px; 
+  border-color: black ;
+  background: lightgray;
+  margin-inline-start: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px grey ;
+}
 #solidborder {
   border-style: solid;
   border-color: orangered ;

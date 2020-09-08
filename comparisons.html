@@ -56,42 +56,36 @@
 <div class="container">
   <!-- Row 1 -->
   <div class="row">
-    <div class="col-11">
+    <div class="col-12">
       <h1><strong>NBA Team Wins Analysis</strong></h1>
     </div>
   </div>
 
   <!-- Row 2 -->
-  <div class="row">
-    <div class="col-md-9 box">
-      <h2> <strong> Team Wins Comparison </strong></h2> 
-        <p> <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-50 p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
-          The purpose of this project was to analyze the performance of all of the teams in the NBA and understanding more about how each of the 30 teams 
-          compare to each each other in terms of total wins, consistency of wins, and gain a better understanding of overall team performance.
-          <br>
-          <br>
-          The data for this analysis was based on the last 5 years (2015 - 2019) of data from Basketball-reference.com (https://www.basketball-reference.com/leagues/NBA_wins.html).  The data was
-          imported into pandas and plotted using the matplotlib module.  This site provides the source data and visualizations created as part of the analysis
-          as well as explanations and descriptions of the results of the analysis. 
-        </p>
+  <div class="row comparisonsbox">
+    <div class="col-md-6 col-sm-12 col-12">
+      <h2> <strong> Comparisons Page </strong></h2> 
+      <h3> Click on any plot for an in-depth analysis. </h3>
+        <a href="/Web-Design-Challenge/winscompare.html">
+            <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-60 p-3 img-fluid fit-picture float-left" alt="...">
+        </a>
+        <a href="/Web-Design-Challenge/meanscompare.html">
+            <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="w-60 p-3 img-fluid fit-picture float-right" alt="...">
+        </a>
+    </div>    
+  <!-- Row 3 -->
+  <div class="row"></div>
+    <div class="col-md-6 col-sm-12 col-12">    
+        <a href="/Web-Design-Challenge/comparisonboxplot.html">
+          <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="w-60 p-3 img-fluid fit-picture " alt="...">
+        </a>
+        <a href="/Web-Design-Challenge/overallboxplot.html">
+          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="w-60 p-3 img-fluid fit-picture " alt="...">
+        </a>
     </div>
-
-    <div class="col-md-2 box">
-      <h2> <strong> Visualizations </strong></h2>
-      <a href="/Web-Design-Challenge/winscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/meanscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/comparisonboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/overallboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
+  </div>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p> -->
-    </div>
+    
   </div>
 </div> 
 
