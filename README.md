@@ -17,8 +17,8 @@ All components and requirements of this challenge have been met including some o
     * A paragraph describing the plot and its significance.
     * I have also made the primary image on each visualization clickable so that the user can choose to view it in a separate browser page, zoom in, etc.
 <br>
-1) A __Comparisons__ page that:
-2) 
+3) A __Comparisons__ page that:
+
     * Contains all of the visualizations on the same page so we can easily visually compare them.
     * Each visualization is clickable and navigates to the detailed visualization page for that plot.
     * Uses a Bootstrap grid for the visualizations.
