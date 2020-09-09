@@ -5,7 +5,7 @@
   <title>Analysis1</title>
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/Web-Design-Challenge/style.css" />
 </head>
 
 <body>
@@ -67,40 +67,42 @@
   <!-- Row 2 -->
   <div class="row">
     <div class="col-md-8 box">
-      <h2> <strong> Team Wins Comparison </strong></h2> 
+      <h2> <strong> League Box Plot </strong></h2> 
         <p> 
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="one p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
-          The purpose of this project was to analyze the performance of all of the teams in the NBA in order to gain a better understanding of overall team performance 
-          and consistency of performance from the standpoint of how frequently the team won a game.
+        <a href ="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png"> 
+          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="w-100 p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
+        </a>  
+          <h3> <strong> Click on the plot above to view it in your browser window.</strong> </h3>
+          In order to a get a sense of the range in terms of quartiles, the median, and the mean of wins data 
+          across all teams, the box plot above was generated for the wins data for the entire league.  
+          <br>
+          The mean is represented by the green triangle, which coincides with the median, indicating no outliers. 
+          Here are the quantitative results:  
           <br>
           <br>
-          In order to accomplish this, data on the number of wins for each of the 30 teams in the NBA was analyzed to 
-          assess and compare each team's performance in terms of <strong>total wins</strong>, <strong>consistency</strong> of wins over a 5 year period of time, 
-          <strong>mean wins</strong> of the top 5 performing teams vs.
-          the worst and median performing teams, and an analysis on <strong>quartiles</strong> across the NBA. 
-          <br>
-          <br>
-          The data for this analysis was based on the last <strong>5 years (2015 - 2019)</strong> of data obtained from  
-          <a href="https://www.basketball-reference.com/leagues/NBA_wins.html"> Basketball-reference.com.</a>  The data was
-          imported into pandas and plotted using the matplotlib module.  <br><br>This site provides the source data and visualizations created as part of the analysis
-          as well as explanations and descriptions of the results of the analysis. 
+          The lower quartile of team wins is: 33.1 <br>
+          The upper quartile of team wins is: 47.2 <br>
+          The interquartile range of team wins is: 14.100000000000001 <br>
+          The median of team wins is: 40.7 <br>
+          Values below 11.95 could be outliers. <br>
+          Values above 68.35000000000001 could be outliers. <br>
         </p>
     </div>
 
     <div class="col-md-3 box">
       <h2> <strong> Visualizations </strong></h2>
-      <a href="/Web-Design-Challenge/WebVisualizations/visualizations/winscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/WebVisualizations/visualizations/meanscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/WebVisualizations/visualizations/comparisonboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-left" alt="...">
-      </a>
-      <a href="/Web-Design-Challenge/WebVisualizations/visualizations/overallboxplot.html">
-          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float-right" alt="...">
-      </a>
+    <a href="/Web-Design-Challenge/WebVisualizations/visualizations/winscompare.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png"  class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/WebVisualizations/visualizations/meanscompare.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/WebVisualizations/visualizations/comparisonboxplot.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
+    <a href="/Web-Design-Challenge/WebVisualizations/visualizations/overallboxplot.html">
+        <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" id="solidborder"  class="p-3 img-fluid fit-picture float" alt="...">
+    </a>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p> -->
     </div>
   </div>

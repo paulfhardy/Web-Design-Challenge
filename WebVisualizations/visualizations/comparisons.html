@@ -5,7 +5,7 @@
   <title>Analysis1</title>
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/Web-Design-Challenge/style.css" />
 </head>
 
 <body>
@@ -33,17 +33,17 @@
             Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/Web-Design-Challenge/winscompare.html">All Team Wins Comparison - Bar Chart</a>
-            <a class="dropdown-item" href="/Web-Design-Challenge/meanscompare.html">Top 5 Mean Wins vs Worst - Line Chart</a>
-            <a class="dropdown-item" href="/Web-Design-Challenge/comparisonboxplot.html">Performance Consistency Comparison - Box Plot </a>
-            <a class="dropdown-item" href="/Web-Design-Challenge/overallboxplot.html">All teams Mean Performance Consistency - Box Plot </a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/WebVisualizations/visualizations/winscompare.html">All Team Wins Comparison - Bar Chart</a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/WebVisualizations/visualizations/meanscompare.html">Top 5 Mean Wins vs Worst - Line Chart</a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/WebVisualizations/visualizations/comparisonboxplot.html">Performance Consistency Comparison - Box Plot </a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/WebVisualizations/visualizations/overallboxplot.html">All teams Mean Performance Consistency - Box Plot </a>
           </div>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="/Web-Design-Challenge/comparisons.html">Comparison</a>
+          <a class="nav-link" href="/Web-Design-Challenge/WebVisualizations/visualizations/comparisons.html">Comparison</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Web-Design-Challenge/datapage.html">Data</a>
+          <a class="nav-link" href="/Web-Design-Challenge/WebVisualizations/visualizations/datapage.html">Data</a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -59,45 +59,36 @@
 <div class="container">
   <!-- Row 1 -->
   <div class="row">
-    <div class="col-11">
+    <div class="col-12">
       <h1><strong>NBA Team Wins Analysis</strong></h1>
     </div>
   </div>
 
   <!-- Row 2 -->
-  <div class="row">
-    <div class="col-md-8 box">
-      <h2> <strong> Team Mean Wins Comparison </strong></h2> 
-      <a href=/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png> 
-        <p> <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="p-3 img-fluid fit-picture float-left" alt="Team Performance comparison - wins over last 5 years.">
-      </a>
-          <h3> <strong> Click on the plot above for a more detailed view.</strong> </h3>
-          To further understand and quantify success of the teams, a line graph was plotted of the actual wins per season for the <strong>top 5 performing teams</strong> 
-          versus the team that represented the <strong>median</strong> of all teams, 
-          and the <strong>worst</strong> performing team. 
-          <br>
-          This chart revealed that the top performing teams, although generally at the top of the graph, at times fell below the team that represented the median performing team. 
-          Additionally, in 2015-16 there was a broader range of wins among the top 5 teams (~ 35 wins) as compared to the most 
-          recent season (~ 10 wins) which was much closer, indicating significant performance variability.
-        </p>
+  <div class="row comparisonsbox">
+    <div class="col-md-6 col-sm-12 col-12">
+      <h2> <strong> Comparisons Page </strong></h2> 
+      <h3> <strong>Click on any plot for an in-depth analysis.</strong> </h3>
+        <a href="/Web-Design-Challenge/WebVisualizations/visualizations/winscompare.html">
+            <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png" class="w-60 p-3 img-fluid fit-picture float-left" alt="...">
+        </a>
+        <a href="/Web-Design-Challenge/WebVisualizations/visualizations/meanscompare.html">
+            <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" class="w-60 p-3 img-fluid fit-picture float-right" alt="...">
+        </a>
+    </div>    
+  <!-- Row 3 -->
+  <div class="row"></div>
+    <div class="col-md-6 col-sm-12 col-12">    
+        <a href="/Web-Design-Challenge/WebVisualizations/visualizations/comparisonboxplot.html">
+          <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="w-60 p-3 img-fluid fit-picture " alt="...">
+        </a>
+        <a href="/Web-Design-Challenge/WebVisualizations/visualizations/overallboxplot.html">
+          <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="w-60 p-3 img-fluid fit-picture " alt="...">
+        </a>
     </div>
-
-    <div class="col-md-3 box">
-      <h2> <strong> Visualizations </strong></h2>
-    <a href="/Web-Design-Challenge/winscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/TotalTeamWinsComparison.png"  class="p-3 img-fluid fit-picture float" alt="...">
-    </a>
-    <a href="/Web-Design-Challenge/meanscompare.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/Top5TeamsMeantoLowestMeanComparison.png" id="solidborder" class="p-3 img-fluid fit-picture float" alt="...">
-    </a>
-    <a href="/Web-Design-Challenge/comparisonboxplot.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/ComparisonBoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float" alt="...">
-    </a>
-    <a href="/Web-Design-Challenge/overallboxplot.html">
-        <img src="/Web-Design-Challenge/WebVisualizations/assets/BoxplotofMeanWins.png" class="p-3 img-fluid fit-picture float" alt="...">
-    </a>
+  </div>
         <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p> -->
-    </div>
+    
   </div>
 </div> 
 
