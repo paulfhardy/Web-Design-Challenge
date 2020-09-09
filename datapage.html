@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Analysis1</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
+    <!--  <a class="navbar-brand" href="#"> Some text </a> -->
+    <a class="navbar-brand" href="#">
+      <img src="/Web-Design-Challenge/WebVisualizations/Resources/icon.png" width="50" height="40" alt="" loading="lazy">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/Web-Design-Challenge/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/Web-Design-Challenge/winscompare.html">All Team Wins Comparison - Bar Chart</a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/meanscompare.html">Top 5 Mean Wins vs Worst - Line Chart</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="/Web-Design-Challenge/comparisonboxplot.html">Performance Consistency Comparison - Box Plot </a>
+            <a class="dropdown-item" href="/Web-Design-Challenge/overallboxplot.html">All teams Mean Performance Consistency - Box Plot </a>
+          </div>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="/Web-Design-Challenge/comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Web-Design-Challenge/datapage.html">Data</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <!--<form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+  <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-12">
+                <h1><strong>NBA Team Wins Analysis</strong></h1>
+            </div>
+        </div>
+        <!-- Row 2  -->
+        <div class="row ">
+            <div class="col-12 tablebox">
+                <h2> <strong> Data </strong></h2> 
+                <h3> The following tables include all of the data used for the plots that appear in this project </h3> 
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-sm">
+                        <thead class="thead-dark">
+                            <tr style="text-align: right;">
+                                <th></th>
+                                <th>Rank</th>
+                                <th>Season</th>
+                                <th>ATL</th>
+                                <th>BOS</th>
+                                <th>BRK</th>
+                                <th>CHI</th>
+                                <th>CHO</th>
+                                <th>CLE</th>
+                                <th>DAL</th>
+                                <th>DEN</th>
+                                <th>DET</th>
+                                <th>GSW</th>
+                                <th>HOU</th>
+                                <th>IND</th>
+                                <th>LAC</th>
+                                <th>LAL</th>
+                                <th>MEM</th>
+                                <th>MIA</th>
+                                <th>MIL</th>
+                                <th>MIN</th>
+                                <th>NOP</th>
+                                <th>NYK</th>
+                                <th>OKC</th>
+                                <th>ORL</th>
+                                <th>PHI</th>
+                                <th>PHO</th>
+                                <th>POR</th>
+                                <th>SAC</th>
+                                <th>SAS</th>
+                                <th>TOR</th>
+                                <th>UTA</th>
+                                <th>WAS</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>0</th>
+                                <td>2.0</td>
+                                <td>2018-19</td>
+                                <td>29.0</td>
+                                <td>49.0</td>
+                                <td>42.0</td>
+                                <td>22.0</td>
+                                <td>39.0</td>
+                                <td>19.0</td>
+                                <td>33.0</td>
+                                <td>54.0</td>
+                                <td>41.0</td>
+                                <td>57.0</td>
+                                <td>53.0</td>
+                                <td>48.0</td>
+                                <td>48.0</td>
+                                <td>37.0</td>
+                                <td>33.0</td>
+                                <td>39.0</td>
+                                <td>60.0</td>
+                                <td>36.0</td>
+                                <td>33.0</td>
+                                <td>17.0</td>
+                                <td>49.0</td>
+                                <td>42.0</td>
+                                <td>51.0</td>
+                                <td>19.0</td>
+                                <td>53.0</td>
+                                <td>39.0</td>
+                                <td>48.0</td>
+                                <td>58.0</td>
+                                <td>50.0</td>
+                                <td>32.0</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>3.0</td>
+                                <td>2017-18</td>
+                                <td>24.0</td>
+                                <td>55.0</td>
+                                <td>28.0</td>
+                                <td>27.0</td>
+                                <td>36.0</td>
+                                <td>50.0</td>
+                                <td>24.0</td>
+                                <td>46.0</td>
+                                <td>39.0</td>
+                                <td>58.0</td>
+                                <td>65.0</td>
+                                <td>48.0</td>
+                                <td>42.0</td>
+                                <td>35.0</td>
+                                <td>22.0</td>
+                                <td>44.0</td>
+                                <td>44.0</td>
+                                <td>47.0</td>
+                                <td>48.0</td>
+                                <td>29.0</td>
+                                <td>48.0</td>
+                                <td>25.0</td>
+                                <td>52.0</td>
+                                <td>21.0</td>
+                                <td>49.0</td>
+                                <td>27.0</td>
+                                <td>47.0</td>
+                                <td>59.0</td>
+                                <td>48.0</td>
+                                <td>43.0</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>4.0</td>
+                                <td>2016-17</td>
+                                <td>43.0</td>
+                                <td>53.0</td>
+                                <td>20.0</td>
+                                <td>41.0</td>
+                                <td>36.0</td>
+                                <td>51.0</td>
+                                <td>33.0</td>
+                                <td>40.0</td>
+                                <td>37.0</td>
+                                <td>67.0</td>
+                                <td>55.0</td>
+                                <td>42.0</td>
+                                <td>51.0</td>
+                                <td>26.0</td>
+                                <td>43.0</td>
+                                <td>41.0</td>
+                                <td>42.0</td>
+                                <td>31.0</td>
+                                <td>34.0</td>
+                                <td>31.0</td>
+                                <td>47.0</td>
+                                <td>29.0</td>
+                                <td>28.0</td>
+                                <td>24.0</td>
+                                <td>41.0</td>
+                                <td>32.0</td>
+                                <td>61.0</td>
+                                <td>51.0</td>
+                                <td>51.0</td>
+                                <td>49.0</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>5.0</td>
+                                <td>2015-16</td>
+                                <td>48.0</td>
+                                <td>48.0</td>
+                                <td>21.0</td>
+                                <td>42.0</td>
+                                <td>48.0</td>
+                                <td>57.0</td>
+                                <td>42.0</td>
+                                <td>33.0</td>
+                                <td>44.0</td>
+                                <td>73.0</td>
+                                <td>41.0</td>
+                                <td>45.0</td>
+                                <td>53.0</td>
+                                <td>17.0</td>
+                                <td>42.0</td>
+                                <td>48.0</td>
+                                <td>33.0</td>
+                                <td>29.0</td>
+                                <td>30.0</td>
+                                <td>32.0</td>
+                                <td>55.0</td>
+                                <td>35.0</td>
+                                <td>10.0</td>
+                                <td>23.0</td>
+                                <td>44.0</td>
+                                <td>33.0</td>
+                                <td>67.0</td>
+                                <td>56.0</td>
+                                <td>40.0</td>
+                                <td>41.0</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td>6.0</td>
+                                <td>2014-15</td>
+                                <td>60.0</td>
+                                <td>40.0</td>
+                                <td>38.0</td>
+                                <td>50.0</td>
+                                <td>33.0</td>
+                                <td>53.0</td>
+                                <td>50.0</td>
+                                <td>30.0</td>
+                                <td>32.0</td>
+                                <td>67.0</td>
+                                <td>56.0</td>
+                                <td>38.0</td>
+                                <td>56.0</td>
+                                <td>21.0</td>
+                                <td>55.0</td>
+                                <td>37.0</td>
+                                <td>41.0</td>
+                                <td>16.0</td>
+                                <td>45.0</td>
+                                <td>17.0</td>
+                                <td>45.0</td>
+                                <td>25.0</td>
+                                <td>18.0</td>
+                                <td>39.0</td>
+                                <td>51.0</td>
+                                <td>29.0</td>
+                                <td>55.0</td>
+                                <td>49.0</td>
+                                <td>38.0</td>
+                                <td>46.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-3 tablebox">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-sm">
+                        <thead class="thead-dark">
+                            <tr style="text-align: right;">
+                                <th></th>
+                                <th>Team Name</th>
+                              </tr>
+                              <tr>
+                                <th>Team Code</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>ATL</th>
+                                <td>Atlanta Hawks</td>
+                              </tr>
+                              <tr>
+                                <th>BOS</th>
+                                <td>Boston Celtics</td>
+                              </tr>
+                              <tr>
+                                <th>BRK</th>
+                                <td>Brooklyn Nets</td>
+                              </tr>
+                              <tr>
+                                <th>CHI</th>
+                                <td>Chicago Bulls</td>
+                              </tr>
+                              <tr>
+                                <th>CHO</th>
+                                <td>Charlotte Hornets</td>
+                              </tr>
+                              <tr>
+                                <th>CLE</th>
+                                <td>Cleveland Cavaliers</td>
+                              </tr>
+                              <tr>
+                                <th>DAL</th>
+                                <td>Dallas Mavericks</td>
+                              </tr>
+                              <tr>
+                                <th>DEN</th>
+                                <td>Denver Nuggets</td>
+                              </tr>
+                              <tr>
+                                <th>DET</th>
+                                <td>Detroit Pistons</td>
+                              </tr>
+                              <tr>
+                                <th>GSW</th>
+                                <td>Golden State Warriors</td>
+                              </tr>
+                              <tr>
+                                <th>HOU</th>
+                                <td>Houston Rockets</td>
+                              </tr>
+                              <tr>
+                                <th>IND</th>
+                                <td>Indiana Pacers</td>
+                              </tr>
+                              <tr>
+                                <th>LAC</th>
+                                <td>LA Clippers</td>
+                              </tr>
+                              <tr>
+                                <th>LAL</th>
+                                <td>LA Lakers</td>
+                              </tr>
+                              <tr>
+                                <th>MEM</th>
+                                <td>Memphis Grizzlies</td>
+                              </tr>
+                              <tr>
+                                <th>MIA</th>
+                                <td>Miami Heat</td>
+                              </tr>
+                              <tr>
+                                <th>MIL</th>
+                                <td>Milwaukee Bucks</td>
+                              </tr>
+                              <tr>
+                                <th>MIN</th>
+                                <td>Minnesota Timberwolves</td>
+                              </tr>
+                              <tr>
+                                <th>NOP</th>
+                                <td>New Orleans Pelicans</td>
+                              </tr>
+                              <tr>
+                                <th>NYK</th>
+                                <td>New York Knicks</td>
+                              </tr>
+                              <tr>
+                                <th>OKC</th>
+                                <td>Oklahoma City Thunder</td>
+                              </tr>
+                              <tr>
+                                <th>ORL</th>
+                                <td>Orlando Magic</td>
+                              </tr>
+                              <tr>
+                                <th>PHI</th>
+                                <td>Philadelphia 76ers</td>
+                              </tr>
+                              <tr>
+                                <th>PHO</th>
+                                <td>Phoenix Suns</td>
+                              </tr>
+                              <tr>
+                                <th>POR</th>
+                                <td>Portland Trail Blazers</td>
+                              </tr>
+                              <tr>
+                                <th>SAS</th>
+                                <td>San Antonio Spurs</td>
+                              </tr>
+                              <tr>
+                                <th>SAC</th>
+                                <td>Sacramento Kings</td>
+                              </tr>
+                              <tr>
+                                <th>TOR</th>
+                                <td>Toronto Raptors</td>
+                              </tr>
+                              <tr>
+                                <th>UTA</th>
+                                <td>Utah Jazz</td>
+                              </tr>
+                              <tr>
+                                <th>WAS</th>
+                                <td>Washington Wizards</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>        
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
