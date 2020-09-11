@@ -1,6 +1,6 @@
 ## Web-Design-Challenge
 
-The "NBA Wins Application" URL is [here](https://paulfhardy.github.io/Web-Design-Challenge/)
+The "NBA Wins Application" URL is [here.](https://paulfhardy.github.io/Web-Design-Challenge/)
 
 #### Please note:
 
